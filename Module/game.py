@@ -6,12 +6,16 @@ import numpy as np
 
 # делим число на 2 сравниваем по половинам и так пока не найдется нужное число
 def random_predict(number: int = 1) -> int:
+    #диапазон случайного числа
     low, high = 0, 100
+    #счетчик попыток
     count = 0
 
     while low <= high:
+        # переменная хранящще предполагаемое число 
         guess = (low + high) // 2
         count += 1
+        # меняем диапазон загаданного числа
         if guess == number:
             return count
         elif guess < number:
