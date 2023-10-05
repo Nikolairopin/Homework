@@ -4,11 +4,14 @@
 
 import numpy as np
 
+
 # делим число на 2 сравниваем по половинам и так пока не найдется нужное число
 def random_predict(number: int = 1) -> int:
-    #диапазон случайного числа
-    low, high = 0, 100
-    #счетчик попыток
+
+    # диапазон случайного числа
+    low = 0
+    high = 100
+    # счетчик попыток
     count = 0
 
     while low <= high:
@@ -34,7 +37,7 @@ def score_game(random_predict) -> int:
         int: среднее количество попыток
     """
     count_ls = []
-    #np.random.seed(1)  # фиксируем сид для воспроизводимости
+    # np.random.seed(1)  # фиксируем сид для воспроизводимости
     random_array = np.random.randint(1, 101, size=(1000))  # загадали список чисел
 
     for number in random_array:
