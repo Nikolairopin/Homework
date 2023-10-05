@@ -6,7 +6,7 @@
    - [x] An algorithm for finding a number from 1 to 100 has been written for a maximum of 7 attempts
    - [x] Gitignore and requirements created
 
- Below you can see the main function [This is a link to the source file](https://github.com/Nikolairopin/Homework/blob/main/Module/game.py) 
+ Below you can see the main function [This is a link to the source file](https://github.com/Nikolairopin/Homework/blob/main/Module/game.py) and [a link to the googlcolab](https://colab.research.google.com/github/Nikolairopin/Homework/blob/main/Module/game.ipynb?hl=ru#scrollTo=AwMJBDKukHmX)
  ```python
 def random_predict(number: int = 1) -> int:
 
